@@ -1,0 +1,612 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Linkedin</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="all.min.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!--NAVBAR - START-->
+    <header class="bg-white py-2 bg1">
+      <div class="container col-xxl-8 offset-xxl-2">
+        <div class="row">
+          <div class="col-2 col-xl-4">
+            <div class="d-flex align-items-center">
+              <img 
+              style="width: 30px;"
+              class="me-2"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/640px-LinkedIn_logo_initials.png" alt="linkedin_logo">
+              <div>
+                <form class="d-flex d-none d-xl-block bg1" role="search">
+                  <input class="form-control me-2 bg1" type="search" placeholder="Search" aria-label="Search">
+                </form>
+              </div>
+
+            </div>
+          </div>
+          <div class="col-10 col-xl-8">
+            <div class="d-flex justify-content-between">
+              <div>
+                <div class="text-secondary d-xl-none">
+                  <a href="#" class="text-secondary fs-4 d-flex">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+                      <path d="M21.41 18.59l-5.27-5.28A6.83 6.83 0 0017 10a7 7 0 10-7 7 6.83 6.83 0 003.31-.86l5.28 5.27a2 2 0 002.82-2.82zM5 10a5 5 0 115 5 5 5 0 01-5-5z"></path>
+                      </svg>
+                  </a>
+                  <span class="d-none d-lg-block"><small>Search</small></span>
+                </div>
+              </div>
+              <div class="text-secondary">
+                <a href="#" class="text-secondary fs-4 d-flex">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match mx-auto" width="24" height="24" focusable="false">
+                    <path d="M23 9v2h-2v7a3 3 0 01-3 3h-4v-6h-4v6H6a3 3 0 01-3-3v-7H1V9l11-7 5 3.18V2h3v5.09z"></path>
+                  </svg>
+                </a>
+                <span class=" d-none d-lg-block"><small>Home</small></span>
+              </div>
+
+              <div class="text-secondary">
+                <a href="#" class="text-secondary fs-4 d-flex">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match mx-auto" width="24" height="24" focusable="false">
+                    <path d="M12 16v6H3v-6a3 3 0 013-3h3a3 3 0 013 3zm5.5-3A3.5 3.5 0 1014 9.5a3.5 3.5 0 003.5 3.5zm1 2h-2a2.5 2.5 0 00-2.5 2.5V22h7v-4.5a2.5 2.5 0 00-2.5-2.5zM7.5 2A4.5 4.5 0 1012 6.5 4.49 4.49 0 007.5 2z"></path>
+                  </svg>
+                </a>
+                <span class=" d-none d-lg-block"><small>My Network</small></span>
+              </div>
+              
+              <div class="text-secondary">
+                <a href="#" class="text-secondary fs-4 d-flex">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match mx-auto" width="24" height="24" focusable="false">
+                    <path d="M17 6V5a3 3 0 00-3-3h-4a3 3 0 00-3 3v1H2v4a3 3 0 003 3h14a3 3 0 003-3V6zM9 5a1 1 0 011-1h4a1 1 0 011 1v1H9zm10 9a4 4 0 003-1.38V17a3 3 0 01-3 3H5a3 3 0 01-3-3v-4.38A4 4 0 005 14z"></path>
+                  </svg>
+                </a>
+                <span class=" d-none d-lg-block"><small>Jobs</small></span>
+              </div>
+
+              <div class="text-secondary">
+                <a href="#" class="text-secondary fs-4 d-flex">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match mx-auto" width="24" height="24" focusable="false">
+                    <path d="M16 4H8a7 7 0 000 14h4v4l8.16-5.39A6.78 6.78 0 0023 11a7 7 0 00-7-7zm-8 8.25A1.25 1.25 0 119.25 11 1.25 1.25 0 018 12.25zm4 0A1.25 1.25 0 1113.25 11 1.25 1.25 0 0112 12.25zm4 0A1.25 1.25 0 1117.25 11 1.25 1.25 0 0116 12.25z"></path>
+                  </svg>
+                </a>
+                <span class=" d-none d-lg-block"><small>Messaging</small></span>
+              </div>
+
+              <div class="text-secondary">
+                <a href="#" class="text-secondary fs-4 d-flex">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match mx-auto" width="24" height="24" focusable="false">
+                    <path d="M22 19h-8.28a2 2 0 11-3.44 0H2v-1a4.52 4.52 0 011.17-2.83l1-1.17h15.7l1 1.17A4.42 4.42 0 0122 18zM18.21 7.44A6.27 6.27 0 0012 2a6.27 6.27 0 00-6.21 5.44L5 13h14z"></path>
+                  </svg>
+                </a>
+                <span class=" d-none d-lg-block"><small>Notifications</small></span>
+              </div>
+
+              <div class="text-secondary">
+                <a href="#" class="text-secondary fs-4 d-flex">
+                  <img width="24" src="https://media.licdn.com/dms/image/D4E35AQF9xGU1QLwauA/profile-framedphoto-shrink_400_400/0/1658384171189?e=1674903600&v=beta&t=Wst1tQqsSXCKElZXAiVh8zx0z40TynILLvk_u3DbftQ" height="24" alt="Ekin Şen" id="ember18" class="global-nav__me-photo ember-view rounded-5 mx-auto">
+                </a>
+                <span class=" d-none d-lg-block"><small>Me</small></span>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" class="mercado-match d-none d-lg-block" width="16" height="16" focusable="false">
+                  <path d="M8 11L3 6h10z" fill-rule="evenodd"></path>
+                </svg>
+              </div>
+
+              <div class="text-secondary">
+                <a href="#" class="text-secondary fs-4 d-flex ">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match mx-auto" width="24" height="24" focusable="false">
+                    <path d="M3 3h4v4H3zm7 4h4V3h-4zm7-4v4h4V3zM3 14h4v-4H3zm7 0h4v-4h-4zm7 0h4v-4h-4zM3 21h4v-4H3zm7 0h4v-4h-4zm7 0h4v-4h-4z"></path>
+                  </svg>
+                </a>
+                <span class=" d-none d-lg-block"><small>Work</small></span>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" class="mercado-match d-none d-lg-block" width="16" height="16" focusable="false">
+                  <path d="M8 11L3 6h10z" fill-rule="evenodd"></path>
+                </svg>
+              </div>
+              <div>
+                <a href="#" class="d-flex text-center" style="color: rgb(179, 131, 125);">
+                  <small>Try to Premium <br> Free.</small> 
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!--NAVBAR - END-->
+
+              <!--PROFILE HEADING - START-->
+    <div class="container mt-3 col-xxl-8 offset-xxl-2">
+      <div class="row">
+        <div class="col-12 col-md-4 col-lg-3">
+          <div class="profile_header bg-secondary rounded-bottom ">
+            <div class="bg-info py-4 rounded-top "></div>
+            <div class="text-center position-relative" style="bottom: 50px;">
+              <div class="text-center bg1">
+                <a href="#">
+                  <img 
+                  class="rounded-circle "
+                  style="width: 75px;" 
+                  src="https://media.licdn.com/dms/image/D4E35AQF9xGU1QLwauA/profile-framedphoto-shrink_400_400/0/1658384171189?e=1674903600&v=beta&t=Wst1tQqsSXCKElZXAiVh8zx0z40TynILLvk_u3DbftQ">
+                </a>
+              </div>
+              <div class="text-center mt-1">
+                <div><strong><a class="text-white" href="#">Ağit Çelik</a></strong></div>
+                <div class="text-secondary text-white"><small>Backend Web Developer Trainee</small></div>
+              </div>
+            </div>
+            <div class="d-none d-md-block">
+              <hr>
+              <div class="row">
+                <div class="col-9">
+                    <div><span class="btn text-secondary text-white"><small>Connections <br>Grow your network</small></span></div>
+                </div>
+                <div class="col-3">
+                  <div><span class="btn text-white"><small>29</small></span></div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-9">
+                    <div><span class="btn text-secondary text-start text-white"><small>Invitation</small></span></div>
+                </div>
+                <div class="col-3">
+                  <div><span class="btn text-white"><small>1</small></span></div>
+                </div>
+              </div>
+              <hr>
+              <div>
+                <span class="btn text-secondary text-start text-white"><small>Access exclusive tools & insights</small></span>
+                <br>
+                <a class="text-black m-4 p-4 text-white" style="font-size: 0.85em;" href="#"><small>Try Premium for free</small></a>
+              </div>
+              <hr>
+                  <a class="btn" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" class="mercado-match text-white" width="16" height="16" focusable="false">
+                      <path d="M13 4a3 3 0 00-3-3H3v14l5-4.5 5 4.5z"></path>
+                    </svg>
+                    <span><small class="text-white">My items</small></span>
+                  </a>
+            </div>
+          </div>
+          <div class="col-12 d-none d-md-block">
+            <div class="bg-secondary rounded mt-2 pt-3 px-2">
+              <div class="text text-white"><small>Recent</small></div>
+              <div class="btn text-secondary text-start">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" class="mercado-match" width="16" height="16" focusable="false">
+                  <path d="M8.5 7h-1A1.5 1.5 0 006 8.5V14h4V8.5A1.5 1.5 0 008.5 7zM12.75 8h-.5A1.25 1.25 0 0011 9.25V14h3V9.25A1.25 1.25 0 0012.75 8z"></path>
+                  <circle cx="8" cy="4" r="2"></circle>
+                  <circle cx="12.5" cy="5.5" r="1.5"></circle>
+                  <path d="M3.75 8h-.5A1.25 1.25 0 002 9.25V14h3V9.25A1.25 1.25 0 003.75 8z"></path>
+                  <circle cx="3.5" cy="5.5" r="1.5"></circle>
+                </svg>
+                <span><small class="text-white">Python Developers Communit...</small></span>
+                <br>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" class="mercado-match" width="16" height="16" focusable="false">
+                  <path d="M8.5 7h-1A1.5 1.5 0 006 8.5V14h4V8.5A1.5 1.5 0 008.5 7zM12.75 8h-.5A1.25 1.25 0 0011 9.25V14h3V9.25A1.25 1.25 0 0012.75 8z"></path>
+                  <circle cx="8" cy="4" r="2"></circle>
+                  <circle cx="12.5" cy="5.5" r="1.5"></circle>
+                  <path d="M3.75 8h-.5A1.25 1.25 0 002 9.25V14h3V9.25A1.25 1.25 0 003.75 8z"></path>
+                  <circle cx="3.5" cy="5.5" r="1.5"></circle>
+                </svg>
+                <span><small class="text-white">Javascript community</small></span>
+              </div>
+              <div><a href="#" class="text-white"><small>Groups</small></a></div>
+              <div class="btn text-secondary text-start">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" class="mercado-match" width="16" height="16" focusable="false">
+                  <path d="M8.5 7h-1A1.5 1.5 0 006 8.5V14h4V8.5A1.5 1.5 0 008.5 7zM12.75 8h-.5A1.25 1.25 0 0011 9.25V14h3V9.25A1.25 1.25 0 0012.75 8z"></path>
+                  <circle cx="8" cy="4" r="2"></circle>
+                  <circle cx="12.5" cy="5.5" r="1.5"></circle>
+                  <path d="M3.75 8h-.5A1.25 1.25 0 002 9.25V14h3V9.25A1.25 1.25 0 003.75 8z"></path>
+                  <circle cx="3.5" cy="5.5" r="1.5"></circle>
+                </svg>
+                <span><small class="text-white">Python Developers Communit...</small></span>
+                <br>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" class="mercado-match" width="16" height="16" focusable="false">
+                  <path d="M8.5 7h-1A1.5 1.5 0 006 8.5V14h4V8.5A1.5 1.5 0 008.5 7zM12.75 8h-.5A1.25 1.25 0 0011 9.25V14h3V9.25A1.25 1.25 0 0012.75 8z"></path>
+                  <circle cx="8" cy="4" r="2"></circle>
+                  <circle cx="12.5" cy="5.5" r="1.5"></circle>
+                  <path d="M3.75 8h-.5A1.25 1.25 0 002 9.25V14h3V9.25A1.25 1.25 0 003.75 8z"></path>
+                  <circle cx="3.5" cy="5.5" r="1.5"></circle>
+                </svg>
+                <span><small class="text-white">Javascript community</small></span>
+                <br>
+                <span><small class="text-white">See all</small></span>
+              </div>
+              <div><a href="#"><small  class="text-white">Events</small></a></div>
+              <div><a href="#"><small class="text-white">Followed Hashtags</small></a></div>
+              <hr>
+              <div class="text-center pb-3"><span class="btn text-white">Discover more</span></div>
+            </div>
+            
+          </div>
+        </div>
+                <!--PROFILE HEADING - END-->
+                <!--SHOW MORE - START-->
+        <div class="col-12 col-md-8 col-lg-6">
+          <div class="row">
+            <div class="col-12">
+              <div class="text-center d-md-none">
+                <a class="text-dark btn" href="#">Start a post
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" class="mercado-match" width="16" height="16" focusable="false">
+                    <path d="M8 11L3 6h10z" fill-rule="evenodd"></path>
+                  </svg> 
+                </a>
+              </div>
+                <!--SHOW MORE - END-->
+                <!--POST BOX - START-->
+                <div class="post-box bg-white rounded-3 px-3">
+                  <div class="row align-items-center">
+                    <div class="col-2">
+                      <img 
+                      class="img-fluid rounded-circle mt-2"
+                      style="width: 75px;"
+                      src="https://media.licdn.com/dms/image/D4E35AQF9xGU1QLwauA/profile-framedphoto-shrink_400_400/0/1658384171189?e=1674903600&v=beta&t=Wst1tQqsSXCKElZXAiVh8zx0z40TynILLvk_u3DbftQ" alt="Profile_Picture">
+                    </div>
+                    <div class="col-10">
+                      <input type="text" placeholder="Search" class="form-control rounded-pill mt-3">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12 my-2">
+                      <div class="d-flex justify-content-around">
+                        <a class="btn text-secondary d-flex" href="#">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match me-1 text-info" width="24" height="24" focusable="false">
+                            <path d="M19 4H5a3 3 0 00-3 3v10a3 3 0 003 3h14a3 3 0 003-3V7a3 3 0 00-3-3zm1 13a1 1 0 01-.29.71L16 14l-2 2-6-6-4 4V7a1 1 0 011-1h14a1 1 0 011 1zm-2-7a2 2 0 11-2-2 2 2 0 012 2z"></path>
+                          </svg>
+                          <span><small>Photo</small></span></a>
+                        <a class="btn text-secondary d-flex" href="#">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match me-1 text-success" width="24" height="24" focusable="false">
+                            <path d="M19 4H5a3 3 0 00-3 3v10a3 3 0 003 3h14a3 3 0 003-3V7a3 3 0 00-3-3zm-9 12V8l6 4z"></path>
+                          </svg>
+                          <span><small>Video</small></span></a>
+                        <a class="btn text-secondary d-flex" href="#">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match me-1 text-danger-emphasis" width="24" height="24" focusable="false">
+                            <path d="M3 3v15a3 3 0 003 3h12a3 3 0 003-3V3zm13 1.75A1.25 1.25 0 1114.75 6 1.25 1.25 0 0116 4.75zm-8 0A1.25 1.25 0 116.75 6 1.25 1.25 0 018 4.75zM19 18a1 1 0 01-1 1H6a1 1 0 01-1-1V9h14zm-5.9-3a1 1 0 00-1-1H12a3.12 3.12 0 00-1 .2l-1-.2v-3h3.9v1H11v1.15a3.7 3.7 0 011.05-.15 1.89 1.89 0 012 1.78V15a1.92 1.92 0 01-1.84 2H12a1.88 1.88 0 01-2-1.75 1 1 0 010-.25h1a.89.89 0 001 1h.1a.94.94 0 001-.88z"></path>
+                          </svg>
+                          <span><small>Event</small></span></a>
+                        <a class="btn text-secondary" href="#">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match me-1 text-danger" width="24" height="24" focusable="false">
+                            <path d="M21 3v2H3V3zm-6 6h6V7h-6zm0 4h6v-2h-6zm0 4h6v-2h-6zM3 21h18v-2H3zM13 7H3v10h10z"></path>
+                          </svg>
+                          <span><small>Write Article</small></span></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--POST BOX - END-->
+            </div>
+                    <!--CONTENT - START-->
+            <div class="col-12">
+              <div class="article bg-white rounded-3 my-2 px-2">
+                <div class="d-flex align-items-center">
+                  <img
+                  class="rounded-circle" 
+                  style="width: 50px;" 
+                  src="https://media.licdn.com/dms/image/D4E35AQF9xGU1QLwauA/profile-framedphoto-shrink_400_400/0/1658384171189?e=1674903600&v=beta&t=Wst1tQqsSXCKElZXAiVh8zx0z40TynILLvk_u3DbftQ" alt="Profile_Picture">
+                  <div class="ms-3">
+                    <div class="fs-6"><strong>Ağit Çelik</strong></div>
+                    <div class="text-secondary"><small>1 nd</small></div>
+                  </div>
+                </div>
+                <div class="my-3">
+                  <div><small>For all #developer's out there that is look to level their skills. 
+
+                    Join our developer bootcamp and increase your knowledge in #machi<a href="#"><span class="text-secondary"><small>...see more</small></span></a> </small> </div>
+                  <img 
+                  class="img-fluid"
+                  src="https://media.licdn.com/dms/image/C4D22AQEnHXSr_crWmA/feedshare-shrink_2048_1536/0/1673907228360?e=1677110400&v=beta&t=B9nZQTkWPNwHxuoPczVhrRQxZT4CwvUS1da6oIlw0qs" alt="Foto">
+                </div>
+                <div class="row">
+                  <div class="col-12 my-2">
+                    <div class="d-flex justify-content-around">
+                      <a class="btn text-secondary" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+                          <path d="M19.46 11l-3.91-3.91a7 7 0 01-1.69-2.74l-.49-1.47A2.76 2.76 0 0010.76 1 2.75 2.75 0 008 3.74v1.12a9.19 9.19 0 00.46 2.85L8.89 9H4.12A2.12 2.12 0 002 11.12a2.16 2.16 0 00.92 1.76A2.11 2.11 0 002 14.62a2.14 2.14 0 001.28 2 2 2 0 00-.28 1 2.12 2.12 0 002 2.12v.14A2.12 2.12 0 007.12 22h7.49a8.08 8.08 0 003.58-.84l.31-.16H21V11zM19 19h-1l-.73.37a6.14 6.14 0 01-2.69.63H7.72a1 1 0 01-1-.72l-.25-.87-.85-.41A1 1 0 015 17l.17-1-.76-.74A1 1 0 014.27 14l.66-1.09-.73-1.1a.49.49 0 01.08-.7.48.48 0 01.34-.11h7.05l-1.31-3.92A7 7 0 0110 4.86V3.75a.77.77 0 01.75-.75.75.75 0 01.71.51L12 5a9 9 0 002.13 3.5l4.5 4.5H19z"></path>
+                        </svg>
+                        <span>Like</span></a>
+                      <a class="btn text-secondary" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+                          <path d="M7 9h10v1H7zm0 4h7v-1H7zm16-2a6.78 6.78 0 01-2.84 5.61L12 22v-4H8A7 7 0 018 4h8a7 7 0 017 7zm-2 0a5 5 0 00-5-5H8a5 5 0 000 10h6v2.28L19 15a4.79 4.79 0 002-4z"></path>
+                        </svg>
+                        <span>Comment</span></a>
+                      <a class="btn text-secondary" href="#">
+                          <img 
+                          style="width: 24px; height: 24px; filter: invert(50%);" 
+                          src="https://cdn-icons-png.flaticon.com/512/1388/1388895.png" alt="share">
+                        <span>Repost</span></a>
+                      <a class="btn text-secondary" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+                          <path d="M21 3L0 10l7.66 4.26L16 8l-6.26 8.34L14 24l7-21z"></path>
+                        </svg>
+                        <span>Send</span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="article bg-white rounded-3 my-2 px-2">
+                <div class="d-flex align-items-center">
+                  <img
+                  class="rounded-circle" 
+                  style="width: 50px;" 
+                  src="https://media.licdn.com/dms/image/D4E35AQF9xGU1QLwauA/profile-framedphoto-shrink_400_400/0/1658384171189?e=1674903600&v=beta&t=Wst1tQqsSXCKElZXAiVh8zx0z40TynILLvk_u3DbftQ" alt="Profile_Picture">
+                  <div class="ms-3">
+                    <div class="fs-6"><strong>Ağit Çelik</strong></div>
+                    <div class="text-secondary"><small>1 nd</small></div>
+                  </div>
+                </div>
+                <div class="my-3">
+                  <div><small>For all #developer's out there that is look to level their skills. 
+
+                    Join our developer bootcamp and increase your knowledge in #machi<a href="#"><span class="text-secondary"><small>...see more</small></span></a> </small> </div>
+                  <img 
+                  class="img-fluid"
+                  src="https://media.licdn.com/dms/image/C4D22AQEnHXSr_crWmA/feedshare-shrink_2048_1536/0/1673907228360?e=1677110400&v=beta&t=B9nZQTkWPNwHxuoPczVhrRQxZT4CwvUS1da6oIlw0qs" alt="Foto">
+                </div>
+                <div class="row">
+                  <div class="col-12 my-2">
+                    <div class="d-flex justify-content-around">
+                      <a class="btn text-secondary" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+                          <path d="M19.46 11l-3.91-3.91a7 7 0 01-1.69-2.74l-.49-1.47A2.76 2.76 0 0010.76 1 2.75 2.75 0 008 3.74v1.12a9.19 9.19 0 00.46 2.85L8.89 9H4.12A2.12 2.12 0 002 11.12a2.16 2.16 0 00.92 1.76A2.11 2.11 0 002 14.62a2.14 2.14 0 001.28 2 2 2 0 00-.28 1 2.12 2.12 0 002 2.12v.14A2.12 2.12 0 007.12 22h7.49a8.08 8.08 0 003.58-.84l.31-.16H21V11zM19 19h-1l-.73.37a6.14 6.14 0 01-2.69.63H7.72a1 1 0 01-1-.72l-.25-.87-.85-.41A1 1 0 015 17l.17-1-.76-.74A1 1 0 014.27 14l.66-1.09-.73-1.1a.49.49 0 01.08-.7.48.48 0 01.34-.11h7.05l-1.31-3.92A7 7 0 0110 4.86V3.75a.77.77 0 01.75-.75.75.75 0 01.71.51L12 5a9 9 0 002.13 3.5l4.5 4.5H19z"></path>
+                        </svg>
+                        <span>Like</span></a>
+                      <a class="btn text-secondary" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+                          <path d="M7 9h10v1H7zm0 4h7v-1H7zm16-2a6.78 6.78 0 01-2.84 5.61L12 22v-4H8A7 7 0 018 4h8a7 7 0 017 7zm-2 0a5 5 0 00-5-5H8a5 5 0 000 10h6v2.28L19 15a4.79 4.79 0 002-4z"></path>
+                        </svg>
+                        <span>Comment</span></a>
+                      <a class="btn text-secondary" href="#">
+                          <img 
+                          style="width: 24px; height: 24px; filter: invert(50%);" 
+                          src="https://cdn-icons-png.flaticon.com/512/1388/1388895.png" alt="share">
+                        <span>Repost</span></a>
+                      <a class="btn text-secondary" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+                          <path d="M21 3L0 10l7.66 4.26L16 8l-6.26 8.34L14 24l7-21z"></path>
+                        </svg>
+                        <span>Send</span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="article bg-white rounded-3 my-2 px-2">
+              <div class="d-flex align-items-center">
+                <img
+                class="rounded-circle" 
+                style="width: 50px;" 
+                src="https://media.licdn.com/dms/image/D4E35AQF9xGU1QLwauA/profile-framedphoto-shrink_400_400/0/1658384171189?e=1674903600&v=beta&t=Wst1tQqsSXCKElZXAiVh8zx0z40TynILLvk_u3DbftQ" alt="Profile_Picture">
+                <div class="ms-3">
+                  <div class="fs-6"><strong>Ağit Çelik</strong></div>
+                  <div class="text-secondary"><small>1 nd</small></div>
+                </div>
+              </div>
+              <div class="my-3">
+                <div><small>For all #developer's out there that is look to level their skills. 
+
+                  Join our developer bootcamp and increase your knowledge in #machi<a href="#"><span class="text-secondary"><small>...see more</small></span></a> </small> </div>
+                <img 
+                class="img-fluid"
+                src="https://media.licdn.com/dms/image/C4D22AQEnHXSr_crWmA/feedshare-shrink_2048_1536/0/1673907228360?e=1677110400&v=beta&t=B9nZQTkWPNwHxuoPczVhrRQxZT4CwvUS1da6oIlw0qs" alt="Foto">
+              </div>
+              <div class="row">
+                <div class="col-12 my-2">
+                  <div class="d-flex justify-content-around">
+                    <a class="btn text-secondary" href="#">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+                        <path d="M19.46 11l-3.91-3.91a7 7 0 01-1.69-2.74l-.49-1.47A2.76 2.76 0 0010.76 1 2.75 2.75 0 008 3.74v1.12a9.19 9.19 0 00.46 2.85L8.89 9H4.12A2.12 2.12 0 002 11.12a2.16 2.16 0 00.92 1.76A2.11 2.11 0 002 14.62a2.14 2.14 0 001.28 2 2 2 0 00-.28 1 2.12 2.12 0 002 2.12v.14A2.12 2.12 0 007.12 22h7.49a8.08 8.08 0 003.58-.84l.31-.16H21V11zM19 19h-1l-.73.37a6.14 6.14 0 01-2.69.63H7.72a1 1 0 01-1-.72l-.25-.87-.85-.41A1 1 0 015 17l.17-1-.76-.74A1 1 0 014.27 14l.66-1.09-.73-1.1a.49.49 0 01.08-.7.48.48 0 01.34-.11h7.05l-1.31-3.92A7 7 0 0110 4.86V3.75a.77.77 0 01.75-.75.75.75 0 01.71.51L12 5a9 9 0 002.13 3.5l4.5 4.5H19z"></path>
+                      </svg>
+                      <span>Like</span></a>
+                    <a class="btn text-secondary" href="#">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+                        <path d="M7 9h10v1H7zm0 4h7v-1H7zm16-2a6.78 6.78 0 01-2.84 5.61L12 22v-4H8A7 7 0 018 4h8a7 7 0 017 7zm-2 0a5 5 0 00-5-5H8a5 5 0 000 10h6v2.28L19 15a4.79 4.79 0 002-4z"></path>
+                      </svg>
+                      <span>Comment</span></a>
+                    <a class="btn text-secondary" href="#">
+                        <img 
+                        style="width: 24px; height: 24px; filter: invert(50%);" 
+                        src="https://cdn-icons-png.flaticon.com/512/1388/1388895.png" alt="share">
+                      <span>Repost</span></a>
+                    <a class="btn text-secondary" href="#">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+                        <path d="M21 3L0 10l7.66 4.26L16 8l-6.26 8.34L14 24l7-21z"></path>
+                      </svg>
+                      <span>Send</span></a>
+                  </div>
+                </div>
+              </div>
+              </div>
+              <div class="article bg-white rounded-3 my-2 px-2">
+              <div class="d-flex align-items-center">
+                <img
+                class="rounded-circle" 
+                style="width: 50px;" 
+                src="https://media.licdn.com/dms/image/D4E35AQF9xGU1QLwauA/profile-framedphoto-shrink_400_400/0/1658384171189?e=1674903600&v=beta&t=Wst1tQqsSXCKElZXAiVh8zx0z40TynILLvk_u3DbftQ" alt="Profile_Picture">
+                <div class="ms-3">
+                  <div class="fs-6"><strong>Ağit Çelik</strong></div>
+                  <div class="text-secondary"><small>1 nd</small></div>
+                </div>
+              </div>
+              <div class="my-3">
+                <div><small>For all #developer's out there that is look to level their skills. 
+
+                  Join our developer bootcamp and increase your knowledge in #machi<a href="#"><span class="text-secondary"><small>...see more</small></span></a> </small> </div>
+                <img 
+                class="img-fluid"
+                src="https://media.licdn.com/dms/image/C4D22AQEnHXSr_crWmA/feedshare-shrink_2048_1536/0/1673907228360?e=1677110400&v=beta&t=B9nZQTkWPNwHxuoPczVhrRQxZT4CwvUS1da6oIlw0qs" alt="Foto">
+              </div>
+              <div class="row">
+                <div class="col-12 my-2">
+                  <div class="d-flex justify-content-around">
+                    <a class="btn text-secondary" href="#">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+                        <path d="M19.46 11l-3.91-3.91a7 7 0 01-1.69-2.74l-.49-1.47A2.76 2.76 0 0010.76 1 2.75 2.75 0 008 3.74v1.12a9.19 9.19 0 00.46 2.85L8.89 9H4.12A2.12 2.12 0 002 11.12a2.16 2.16 0 00.92 1.76A2.11 2.11 0 002 14.62a2.14 2.14 0 001.28 2 2 2 0 00-.28 1 2.12 2.12 0 002 2.12v.14A2.12 2.12 0 007.12 22h7.49a8.08 8.08 0 003.58-.84l.31-.16H21V11zM19 19h-1l-.73.37a6.14 6.14 0 01-2.69.63H7.72a1 1 0 01-1-.72l-.25-.87-.85-.41A1 1 0 015 17l.17-1-.76-.74A1 1 0 014.27 14l.66-1.09-.73-1.1a.49.49 0 01.08-.7.48.48 0 01.34-.11h7.05l-1.31-3.92A7 7 0 0110 4.86V3.75a.77.77 0 01.75-.75.75.75 0 01.71.51L12 5a9 9 0 002.13 3.5l4.5 4.5H19z"></path>
+                      </svg>
+                      <span>Like</span></a>
+                    <a class="btn text-secondary" href="#">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+                        <path d="M7 9h10v1H7zm0 4h7v-1H7zm16-2a6.78 6.78 0 01-2.84 5.61L12 22v-4H8A7 7 0 018 4h8a7 7 0 017 7zm-2 0a5 5 0 00-5-5H8a5 5 0 000 10h6v2.28L19 15a4.79 4.79 0 002-4z"></path>
+                      </svg>
+                      <span>Comment</span></a>
+                    <a class="btn text-secondary" href="#">
+                        <img 
+                        style="width: 24px; height: 24px; filter: invert(50%);" 
+                        src="https://cdn-icons-png.flaticon.com/512/1388/1388895.png" alt="share">
+                      <span>Repost</span></a>
+                    <a class="btn text-secondary" href="#">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+                        <path d="M21 3L0 10l7.66 4.26L16 8l-6.26 8.34L14 24l7-21z"></path>
+                      </svg>
+                      <span>Send</span></a>
+                  </div>
+                </div>
+              </div>
+              </div>
+              <div class="article bg-white rounded-3 my-2 px-2">
+                <div class="d-flex align-items-center">
+                  <img
+                  class="rounded-circle" 
+                  style="width: 50px;" 
+                  src="https://media.licdn.com/dms/image/D4E35AQF9xGU1QLwauA/profile-framedphoto-shrink_400_400/0/1658384171189?e=1674903600&v=beta&t=Wst1tQqsSXCKElZXAiVh8zx0z40TynILLvk_u3DbftQ" alt="Profile_Picture">
+                  <div class="ms-3">
+                    <div class="fs-6"><strong>Ağit Çelik</strong></div>
+                    <div class="text-secondary"><small>1 nd</small></div>
+                  </div>
+                </div>
+                <div class="my-3">
+                  <div><small>For all #developer's out there that is look to level their skills. 
+
+                    Join our developer bootcamp and increase your knowledge in #machi<a href="#"><span class="text-secondary"><small>...see more</small></span></a> </small> </div>
+                  <img 
+                  class="img-fluid"
+                  src="https://media.licdn.com/dms/image/C4D22AQEnHXSr_crWmA/feedshare-shrink_2048_1536/0/1673907228360?e=1677110400&v=beta&t=B9nZQTkWPNwHxuoPczVhrRQxZT4CwvUS1da6oIlw0qs" alt="Foto">
+                </div>
+                <div class="row">
+                  <div class="col-12 my-2">
+                    <div class="d-flex justify-content-around">
+                      <a class="btn text-secondary" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+                          <path d="M19.46 11l-3.91-3.91a7 7 0 01-1.69-2.74l-.49-1.47A2.76 2.76 0 0010.76 1 2.75 2.75 0 008 3.74v1.12a9.19 9.19 0 00.46 2.85L8.89 9H4.12A2.12 2.12 0 002 11.12a2.16 2.16 0 00.92 1.76A2.11 2.11 0 002 14.62a2.14 2.14 0 001.28 2 2 2 0 00-.28 1 2.12 2.12 0 002 2.12v.14A2.12 2.12 0 007.12 22h7.49a8.08 8.08 0 003.58-.84l.31-.16H21V11zM19 19h-1l-.73.37a6.14 6.14 0 01-2.69.63H7.72a1 1 0 01-1-.72l-.25-.87-.85-.41A1 1 0 015 17l.17-1-.76-.74A1 1 0 014.27 14l.66-1.09-.73-1.1a.49.49 0 01.08-.7.48.48 0 01.34-.11h7.05l-1.31-3.92A7 7 0 0110 4.86V3.75a.77.77 0 01.75-.75.75.75 0 01.71.51L12 5a9 9 0 002.13 3.5l4.5 4.5H19z"></path>
+                        </svg>
+                        <span>Like</span></a>
+                      <a class="btn text-secondary" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+                          <path d="M7 9h10v1H7zm0 4h7v-1H7zm16-2a6.78 6.78 0 01-2.84 5.61L12 22v-4H8A7 7 0 018 4h8a7 7 0 017 7zm-2 0a5 5 0 00-5-5H8a5 5 0 000 10h6v2.28L19 15a4.79 4.79 0 002-4z"></path>
+                        </svg>
+                        <span>Comment</span></a>
+                      <a class="btn text-secondary" href="#">
+                          <img 
+                          style="width: 24px; height: 24px; filter: invert(50%);" 
+                          src="https://cdn-icons-png.flaticon.com/512/1388/1388895.png" alt="share">
+                        <span>Repost</span></a>
+                      <a class="btn text-secondary" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+                          <path d="M21 3L0 10l7.66 4.26L16 8l-6.26 8.34L14 24l7-21z"></path>
+                        </svg>
+                        <span>Send</span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+
+
+            </div>
+                <!--CONTENT - END-->
+          </div>
+        </div>
+        <!--ASIDE RIGHT - START-->
+        <div class="col-lg-3 d-none d-lg-block">
+            <div class="news bg-white p-3 rounded">
+              <div><strong>Linkedin News</strong></div>
+              <div class="my-2">
+                <ul>
+                  <a class="text-black" href="#"><li><strong><small>Lorem, ipsum dolor.</small></strong>
+                    <br>
+                    <span class="text-secondary"><small>vor 2 Tagen • 2.124 Leser</small></span></li></a>
+                </ul>
+                <ul>
+                  <a class="text-black" href="#"><li><strong><small>Lorem, ipsum dolor.</small></strong>
+                    <br>
+                    <span class="text-secondary"><small>vor 4 Tagen • 8.012 Leser</small></span></li></a>
+                </ul>
+                <ul>
+                  <a class="text-black" href="#"><li><strong><small>Lorem, ipsum dolor.</small></strong>
+                    <br>
+                    <span class="text-secondary"><small>vor 2 Tagen • 7.652 Leser</small></span></li></a>
+                </ul>
+                <ul>
+                  <a class="text-black" href="#"><li><strong><small>Lorem, ipsum dolor.</small></strong>
+                    <br>
+                    <span class="text-secondary"><small>vor 3 Tagen • 7.567 Leser</small></span></li></a>
+                </ul>
+                <a href="#"><span class="text-secondary">Mehr anzeigen</span></a>
+              </div>
+            </div>
+            <div class="linkedin_aside_footer mt-2 p-3 text-center">
+              <a class="foot text-secondary pe-2" href="#">About</a>
+              <a class="foot text-secondary pe-2" href="#">Accessiblity</a>
+              <a class="foot text-secondary pe-2" href="#">Help Center</a>
+              <br>
+              <a class="foot text-secondary pe-2" href="#">Privacy & Terms</a>
+              <a class="foot text-secondary pe-2" href="#">Ad Choices</a>
+              <br>
+              <a class="foot text-secondary pe-2" href="#">Advertising</a>
+              <a class="foot text-secondary pe-2" href="#">Business-Services</a>
+              <br>
+              <a class="foot text-secondary pe-2" href="#">Get the Linkedin app</a>
+              <a class="foot text-secondary pe-2" href="#">More</a>
+              <div class="mt-2" >
+                <span class="foot"> 
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56 14" data-supported-dps="56x14" fill="currentColor" class="mercado-match" width="56" height="14" focusable="false">
+                    <g>
+                      <path class="background-mercado" d="M22.1 8.2l3.09 3.8h-2.44L20 8.51V12h-2V2h2v5.88L22.54 5h2.55zm-8-3.4A2.71 2.71 0 0011.89 6V5H10v7h2V8.73a1.74 1.74 0 011.66-1.93C14.82 6.8 15 7.94 15 8.73V12h2V8.29c0-2.2-.73-3.49-2.86-3.49zM32 8.66a4.22 4.22 0 010 .44h-5.25v.07a1.79 1.79 0 001.83 1.43 2.51 2.51 0 001.84-.69l1.33 1a4.31 4.31 0 01-3.25 1.29 3.49 3.49 0 01-3.7-3.75 3.58 3.58 0 013.76-3.65C30.44 4.8 32 6.13 32 8.66zm-1.86-.86a1.46 1.46 0 00-1.59-1.4 1.64 1.64 0 00-1.8 1.4zM2 2H0v10h6v-2H2zm36 0h2v10h-1.89v-.7a2.44 2.44 0 01-2 .9 3.41 3.41 0 01-3.31-3.7 3.36 3.36 0 013.3-3.7 2.62 2.62 0 011.9.7zm.15 6.5a1.63 1.63 0 00-1.62-1.85A1.76 1.76 0 0034.9 8.5a1.76 1.76 0 001.63 1.85 1.63 1.63 0 001.62-1.85zM8 1.8A1.27 1.27 0 006.75 3a1.25 1.25 0 002.5 0A1.27 1.27 0 008 1.8zM7 12h2V5H7zM56 1v12a1 1 0 01-1 1H43a1 1 0 01-1-1V1a1 1 0 011-1h12a1 1 0 011 1zM46 5h-2v7h2zm.25-2a1.25 1.25 0 00-2.5 0 1.25 1.25 0 002.5 0zM54 8.29c0-2.2-.73-3.49-2.86-3.49A2.71 2.71 0 0048.89 6V5H47v7h2V8.73a1.74 1.74 0 011.66-1.93C51.82 6.8 52 7.94 52 8.73V12h2z"></path>
+                    </g>
+                  </svg>
+                  LinkedIn Corporation © 2023
+                </span>
+              </div>
+            </div>
+        </div>
+        <!--ASIDE RIGHT - END-->
+      </div>
+    </div>
+      <!--MESSENGER - START-->
+    <div class="messenger container bg-white rounded-top pt-3">
+      <div class="row">
+        <div class="col-8 d-flex">
+          <img style="height:30px" src="https://media.licdn.com/dms/image/D4E35AQF9xGU1QLwauA/profile-framedphoto-shrink_100_100/0/1658384171189?e=1674907200&v=beta&t=ns0i3h2ju3_WtN7Z_A-km1seDVHYJ_ru65o-l3J8Kjw" loading="lazy" alt="Ekin Şen" id="ember207" class="rounded-circle ps-2">
+          <span class="ps-2"><strong><small>Messaging</small> </strong></span>
+        </div>
+        <div class="col-4 d-flex justify-content-between">
+          <div>
+            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" class="mercado-match text-secondary" width="16" height="16" focusable="false">
+            <path d="M3 9.5A1.5 1.5 0 114.5 8 1.5 1.5 0 013 9.5zM11.5 8A1.5 1.5 0 1013 6.5 1.5 1.5 0 0011.5 8zm-5 0A1.5 1.5 0 108 6.5 1.5 1.5 0 006.5 8z"></path>
+          </svg></a>
+            </div>
+          <div>
+            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" class="mercado-match text-secondary" width="16" height="16" focusable="false">
+            <path d="M15 2.53a1.51 1.51 0 01-.44 1L9.15 9 6 10l1-3.12 5.44-5.44A1.5 1.5 0 0115 2.53zM12 11a1 1 0 01-1 1H5a1 1 0 01-1-1V5a1 1 0 011-1h3V2H5a3 3 0 00-3 3v6a3 3 0 003 3h6a3 3 0 003-3V8h-2z"></path>
+          </svg></a>
+            </div>
+          <div>
+            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" class="mercado-match text-secondary" width="16" height="16" focusable="false">
+            <path d="M15 11L8 6.39 1 11V8.61L8 4l7 4.61z"></path>
+          </svg></a>
+          </div>
+         </div>    
+             <!--MESSENGER - START-->x
+      </div>
+    </div>
+    
+    
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
+</html>
